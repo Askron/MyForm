@@ -57,7 +57,7 @@ $(window).bind('load', function () {
 	  			dataType: "jsonp",
 	  			jsonpCallback: "getstatus",
 	  			success: function(data){
-	    			alert(data.message);
+	    			alert('check');
 	  			}
 			});
 		}
