@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MyForm</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<form action="success.json" id="myForm" style="top:-10px;" class="container">
+			<input name="fio" type="text" placeholder="ФИО" required> <br>
+			<input name="email" type="email" placeholder="Email" required> <br>
+			<input name="phone" type="tel" placeholder="Телефон" required> <br>
+			<button id="submitButton" type="submit">Отправить</button>
+		</form>
+		<div id="resultContainer" class="container" style="justify-content:start; font-size:24pt;"></div>
+	</body>
+</html>
