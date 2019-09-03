@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Оружейные технологии</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="all">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link href="img/favicon.png" type="image/png" rel="icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/owl.theme.default.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/warranties.css" rel="stylesheet">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="header__top col">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <button class="menu-btn btn">
+                                <img src="img/burger.svg" class="menu-btn__img">
+                            </button>
+                            <nav class="menu col">
+                                <a href="/overviews.html" class="menu__link link">Обзоры</a>
+                                <a href="/warranties.html" class="menu__link link">Гарантии</a>
+                                <a href="" class="menu__link link">Доставка</a>
+                                <a href="/legal-issues.html" class="menu__link link">Правовые вопросы</a>
+                                <a href="/about.html" class="menu__link link">О компании</a>
+                                <a href="/contacts.html" class="menu__link link">Контакты</a>
+                            </nav>
+                            <div class="auth col col-auto">
+                                <img src="img/person.png" draggable="false" class="auth__img">
+                                <a href="" class="auth__login auth__link link">Войти</a>
+                                <div class="auth__delimiter"></div>
+                                <a href="" class="auth__reg auth__link link">Регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="header__bottom col">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="logo col-12 col-md-6 col-lg-3">
+                                <a href="/">
+                                    <img src="img/logo.png" class="logo__img">
+                                </a>
+                            </div>
+                            <div class="header__info col-lg-2">
+                                <div class="header__info-title">Время работы:</div>
+                                <div class="header__info-working-time">ПН-ПТ 09:00 - 20:00</div>
+                                <div class="header__info-working-time">СБ-ВС 10:00 - 19:00</div>
+                            </div>
+                            <div class="header__info header__info-callback col-lg-2">
+                                <div class="header__info-title">+7 977 123 48 72</div>
+                                <button class="header__info-btn btn">Заказать звонок</button>
+                            </div>
+                            <div class="header__btn-wrap col-4 col-md-2 col-lg-1 col-auto offset-lg-1">
+                                <button class="header__btn btn">
+                                    <img src="img/compare.png">
+                                </button>
+                            </div>
+                            <div class="header__btn-wrap col-4 col-md-2 col-lg-1 col-auto">
+                                <button class="header__btn btn">
+                                    <img src="img/favorite.png">
+                                </button>
+                            </div>
+                            <div class="header__btn-wrap col-4 col-md-2 col-lg-2 col-auto">
+                                <button class="header__btn header__btn-basket btn">
+                                    <img src="img/basket.png">
+                                    <div class="header__basket-count">4</div>
+                                </button>
+                                <div class="header__basket-title">Корзина</div>
+                                <span class="header__basket-text">Сумма: <br class="d-sm-none">5 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-opened="false" class="mobile-menu__wrap">
+                <div class="mobile-menu">
+                    <div class="mobile-menu__btn-close-wrap">
+                        <button class="mobile-menu__btn-close btn">
+                            <img src="img/close.png" class="mobile-menu__btn-close-img">
+                        </button>
+                    </div>
+                    <div class="mobile-menu__list">
+                        <a href="" class="mobile-menu__link link">Обзоры</a>
+                        <a href="" class="mobile-menu__link link">Гарантии</a>
+                        <a href="" class="mobile-menu__link link">Доставка</a>
+                        <a href="" class="mobile-menu__link link">Правовые вопросы</a>
+                        <a href="" class="mobile-menu__link link">О компании</a>
+                        <a href="" class="mobile-menu__link link">Контакты</a>
+                    </div>
+                    <div class="header__info-mobile">
+                        <div class="header__info-title">Время работы:</div>
+                        <div class="header__info-working-time">ПН-ПТ 09:00 - 20:00</div>
+                        <div class="header__info-working-time">СБ-ВС 10:00 - 19:00</div>
+                    </div>
+                    <div class="header__info-mobile header__info-callback-mobile">
+                        <div class="header__info-title">+7 977 123 48 72</div>
+                        <button class="header__info-btn btn">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="title-block container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-4 col-lg-7">
+                        <h1 class="h1">Гарантии</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="inner container">
+                <div class="row no-gutters">
+                    <div class="inner__main col col-auto">
+                        <p class="inner__p">
+                            С каждым днем увеличивается число людей, которые делают покупки в интернет - магазинах. Как и в любом обычном
+                            магазине, продавцы обязаны предоставлять гарантию на товар. Перед тем, как решиться на покупку в интернет -
+                            магазине, стоит изучить свои права, чтобы не стать жертвой мошенников.
+                        </p>
+                        <h2 class="inner__h2 h2">Что такое гарантия товара</h2>
+                        <p class="inner__p">
+                            Гарантийным сроком называют некий период времени, в течение которого продавец или изготовитель товара обязан
+                            исправить какие-либо дефекты или недостатки, обнаруженные клиентом после покупки. Если сам потребитель не
+                            нарушил условия использования товара, транспортировки, хранения, то продавец ответственен за дефекты проданной
+                            вещи. Гарантийный срок начинается с того момента, как товар передан потребителю, если договор не предусматривает
+                            иное. Бывают случаи, что день передачи конкретно установить нет возможности, и поэтому гарантийный срок
+                            отечитывают от дня изготовления товара.
+                        </p>
+                        <p class="inner__p">
+                            И самое главное, что вам следует знать: при дистанционной покупке, а именно, при получении товара с
+                            интернет-магазина гарантийный срок отсчитывается с того, момента, как клиенту была осуществлена доставка.
+                        </p>
+                        <p class="inner__p">
+                            Гарантийное обслуживание - это бесплатное для клиента устранение несовершенств и недостатков товара
+                            изготовителем или продавцом. Данное обслуживание осуществляется специальными сервисными центрами фирм,
+                            которые производят товар.
+                        </p>
+                        <h2 class="inner__h2 h2">Права клиента при обнаружении дефектов в товаре</h2>
+                        <p class="inner__p">
+                            Согласно закону РФ «О защите прав потребителей» ст. 18 потребитель при обнаружении дефектов и недостатков в
+                            товаре имеет следующие права:
+                        </p>
+                        <ol class="inner__ol">
+                            <li class="inner__li">Требовать замены товара на аналогичный (той же модели)</li>
+                            <li class="inner__li">Требовать замены на товар другой марки или модели с перерасчетом цены</li>
+                            <li class="inner__li">Требовать устранения выявленных недостатков товара продавцом или возмещения денежных средств на ремонт третьими лицами или потребителем</li>
+                            <li class="inner__li">Вернуть товар и потребовать возврата денежных средств</li>
+                        </ol>
+                        <p class="inner__p inner__p-black">
+                            Предлагаемые нами ствольные заготовки (бланки) предназначены исключительно для ознакомительных
+                            и учебных целей. Гражданский оборот ствольных заготовок не запрещен, поскольку ствольную заготовку
+                            нельзя отнести к основной части огнестрельного оружия.
+                        </p>
+                        <section class="warning-block container">
+                            <div class="row no-gutters">
+                                <div class="warning-block__img col-3 col-sm-2 col-md-2 col-lg-1 col-auto offset-1">
+                                    <img src="img/warning.png">
+                                </div>
+                                <div class="inner__warning-text warning-block__text col-7 col-sm-8 col-lg-9 col-md-8 col-auto">
+                                    Помните, что любая доработка ствольных заготовок может повлечь за собой уголовную ответственность.
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col col-auto d-none d-md-flex">
+                        <aside class="aside">
+                            <div class="aside__block">
+                                <div class="aside__header">
+                                    <h3 class="aside__title">Товары</h3>
+                                    <div class="aside__btns">
+                                        <button class="aside__btn aside__btn_left btn">
+                                            <img src="img/aside-arrow.png" class="aside__btn-img">
+                                        </button>
+                                        <button class="aside__btn aside__btn_right btn">
+                                            <img src="img/aside-arrow.png" class="aside__btn-img">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="aside__content">
+                                    <div class="aside-goods owl-carousel owl-theme">
+                                        <div class="aside-goods__elem">
+                                            <img src="img/aside-good.png" class="aside-goods__img">
+                                            <a href="" class="aside-goods__link-title">
+                                                <h3 class="aside-goods__title">Калибр 22 LR (5.65)</h3>
+                                            </a>
+                                            <div class="aside-goods__descr">Заготовка ствола нарезная под калибр 5.65.</div>
+                                            <div class="aside-goods__price-block">
+                                                <span class="aside-goods__price">5 000 ₽</span>
+                                                <span class="aside-goods__per">за 1 см</span>
+                                            </div>
+                                        </div>
+                                        <div class="aside-goods__elem">
+                                            <img src="img/aside-good.png" class="aside-goods__img">
+                                            <a href="" class="aside-goods__link-title">
+                                                <h3 class="aside-goods__title">Калибр 22 LR (5.65)</h3>
+                                            </a>
+                                            <div class="aside-goods__descr">Заготовка ствола нарезная под калибр 5.65.</div>
+                                            <div class="aside-goods__price-block">
+                                                <span class="aside-goods__price">5 000 ₽</span>
+                                                <span class="aside-goods__per">за 1 см</span>
+                                            </div>
+                                        </div>
+                                        <div class="aside-goods__elem">
+                                            <img src="img/aside-good.png" class="aside-goods__img">
+                                            <a href="" class="aside-goods__link-title">
+                                                <h3 class="aside-goods__title">Калибр 22 LR (5.65)</h3>
+                                            </a>
+                                            <div class="aside-goods__descr">Заготовка ствола нарезная под калибр 5.65.</div>
+                                            <div class="aside-goods__price-block">
+                                                <span class="aside-goods__price">5 000 ₽</span>
+                                                <span class="aside-goods__per">за 1 см</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aside__block">
+                                <div class="aside__header">
+                                    <h3 class="aside__title">Отзывы</h3>
+                                    <div class="aside__btns">
+                                        <button class="aside__btn aside__btn_left btn">
+                                            <img src="img/aside-arrow.png" class="aside__btn-img">
+                                        </button>
+                                        <button class="aside__btn aside__btn_right btn">
+                                            <img src="img/aside-arrow.png" class="aside__btn-img">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="aside__content">
+                                    <div class="aside-reviews owl-carousel owl-theme">
+                                        <div class="aside-reviews__elem">
+                                            <img src="img/review-avatar.png" class="aside-reviews__img">
+                                            <h3 class="aside-reviews__title">Гавриил Тарасов</h3>
+                                            <div class="aside-reviews__text">После заказа привезли через пару часов. Был приятно удивлён быстрой доставкой до дома. Оплатил картой.</div>
+                                            <a href="" class="aside-reviews__more">Подробнее</a>
+                                        </div>
+                                        <div class="aside-reviews__elem">
+                                            <img src="img/review-avatar.png" class="aside-reviews__img">
+                                            <h3 class="aside-reviews__title">Гавриил Тарасов</h3>
+                                            <div class="aside-reviews__text">После заказа привезли через пару часов. Был приятно удивлён быстрой доставкой до дома. Оплатил картой.</div>
+                                            <a href="" class="aside-reviews__more">Подробнее</a>
+                                        </div>
+                                        <div class="aside-reviews__elem">
+                                            <img src="img/review-avatar.png" class="aside-reviews__img">
+                                            <h3 class="aside-reviews__title">Гавриил Тарасов</h3>
+                                            <div class="aside-reviews__text">После заказа привезли через пару часов. Был приятно удивлён быстрой доставкой до дома. Оплатил картой.</div>
+                                            <a href="" class="aside-reviews__more">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aside__block">
+                                <div class="aside__header">
+                                    <h3 class="aside__title">Статьи</h3>
+                                    <div class="aside__btns">
+                                        <button class="aside__btn aside__btn_left btn">
+                                            <img src="img/aside-arrow.png" class="aside__btn-img">
+                                        </button>
+                                        <button class="aside__btn aside__btn_right btn">
+                                            <img src="img/aside-arrow.png" class="aside__btn-img">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="aside__content">
+                                    <div class="aside-articles owl-carousel owl-theme">
+                                        <div class="aside-articles__elem">
+                                            <img src="img/aside-article.png" class="aside-articles__img">
+                                            <h3 class="aside-articles__title">Интересные факты о пневматическом оружии</h3>
+                                            <div class="aside-articles__descr">В создание различных типов оружия, в том...</div>
+                                            <a href="" class="aside-articles__more">Подробнее</a>
+                                        </div>
+                                        <div class="aside-articles__elem">
+                                            <img src="img/aside-article.png" class="aside-articles__img">
+                                            <h3 class="aside-articles__title">Интересные факты о пневматическом оружии</h3>
+                                            <div class="aside-articles__descr">В создание различных типов оружия, в том...</div>
+                                            <a href="" class="aside-articles__more">Подробнее</a>
+                                        </div>
+                                        <div class="aside-articles__elem">
+                                            <img src="img/aside-article.png" class="aside-articles__img">
+                                            <h3 class="aside-articles__title">Интересные факты о пневматическом оружии</h3>
+                                            <div class="aside-articles__descr">В создание различных типов оружия, в том...</div>
+                                            <a href="" class="aside-articles__more">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        <div class="footer__top row">
+                            <div class="footer_logo-wrap col-12 col-lg-4 col-xl-3">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="col-12 col-lg-2 col-xl-auto">
+                                <div class="footer__menu">
+                                    <a href="" class="footer__menu-link">Обзоры</a>
+                                    <a href="" class="footer__menu-link">Гарантии</a>
+                                    <a href="" class="footer__menu-link">Карта сайта</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-xl-auto">
+                                <div class="footer__menu">
+                                    <a href="" class="footer__menu-link">Правовые вопросы</a>
+                                    <a href="" class="footer__menu-link">Политика конфиденциальности</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-xl-auto">
+                                <div class="footer__menu">
+                                    <a href="" class="footer__menu-link">О компании</a>
+                                    <a href="" class="footer__menu-link">Контакты</a>
+                                    <a href="" class="footer__menu-link">Доставка</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-12 col-xl-3">
+                                <div class="footer__social">
+                                    <a href="" class="footer__social-link">
+                                        <img src="img/fb.png">
+                                    </a>
+                                    <a href="" class="footer__social-link">
+                                        <img src="img/tw.png">
+                                    </a>
+                                    <a href="" class="footer__social-link">
+                                        <img src="img/vk.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom-wrap row">
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer__bottom col">
+                                © Интернет-магазин "Оружейные технологии", 2019
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

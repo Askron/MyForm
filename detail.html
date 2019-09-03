@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Оружейные технологии</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="all">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link href="img/favicon.png" type="image/png" rel="icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/owl.theme.default.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/detail.css" rel="stylesheet">
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/zoomsl-3.0.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/detail.js"></script>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="header__top col">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <button class="menu-btn btn">
+                                <img src="img/burger.svg" class="menu-btn__img">
+                            </button>
+                            <nav class="menu col">
+                                <a href="/overviews.html" class="menu__link link">Обзоры</a>
+                                <a href="/warranties.html" class="menu__link link">Гарантии</a>
+                                <a href="" class="menu__link link">Доставка</a>
+                                <a href="/legal-issues.html" class="menu__link link">Правовые вопросы</a>
+                                <a href="/about.html" class="menu__link link">О компании</a>
+                                <a href="/contacts.html" class="menu__link link">Контакты</a>
+                            </nav>
+                            <div class="auth col col-auto">
+                                <img src="img/person.png" draggable="false" class="auth__img">
+                                <a href="" class="auth__login auth__link link">Войти</a>
+                                <div class="auth__delimiter"></div>
+                                <a href="" class="auth__reg auth__link link">Регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="header__bottom col">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="logo col-12 col-md-6 col-lg-3">
+                                <a href="/">
+                                    <img src="img/logo.png" class="logo__img">
+                                </a>
+                            </div>
+                            <div class="header__info col-lg-2">
+                                <div class="header__info-title">Время работы:</div>
+                                <div class="header__info-working-time">ПН-ПТ 09:00 - 20:00</div>
+                                <div class="header__info-working-time">СБ-ВС 10:00 - 19:00</div>
+                            </div>
+                            <div class="header__info header__info-callback col-lg-2">
+                                <div class="header__info-title">+7 977 123 48 72</div>
+                                <button class="header__info-btn btn">Заказать звонок</button>
+                            </div>
+                            <div class="header__btn-wrap col-4 col-md-2 col-lg-1 col-auto offset-lg-1">
+                                <button class="header__btn btn">
+                                    <img src="img/compare.png">
+                                </button>
+                            </div>
+                            <div class="header__btn-wrap col-4 col-md-2 col-lg-1 col-auto">
+                                <button class="header__btn btn">
+                                    <img src="img/favorite.png">
+                                </button>
+                            </div>
+                            <div class="header__btn-wrap col-4 col-md-2 col-lg-2 col-auto">
+                                <button class="header__btn header__btn-basket btn">
+                                    <img src="img/basket.png">
+                                    <div class="header__basket-count">4</div>
+                                </button>
+                                <div class="header__basket-title">Корзина</div>
+                                <span class="header__basket-text">Сумма: <br class="d-sm-none">5 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-opened="false" class="mobile-menu__wrap">
+                <div class="mobile-menu">
+                    <div class="mobile-menu__btn-close-wrap">
+                        <button class="mobile-menu__btn-close btn">
+                            <img src="img/close.png" class="mobile-menu__btn-close-img">
+                        </button>
+                    </div>
+                    <div class="mobile-menu__list">
+                        <a href="" class="mobile-menu__link link">Обзоры</a>
+                        <a href="" class="mobile-menu__link link">Гарантии</a>
+                        <a href="" class="mobile-menu__link link">Доставка</a>
+                        <a href="" class="mobile-menu__link link">Правовые вопросы</a>
+                        <a href="" class="mobile-menu__link link">О компании</a>
+                        <a href="" class="mobile-menu__link link">Контакты</a>
+                    </div>
+                    <div class="header__info-mobile">
+                        <div class="header__info-title">Время работы:</div>
+                        <div class="header__info-working-time">ПН-ПТ 09:00 - 20:00</div>
+                        <div class="header__info-working-time">СБ-ВС 10:00 - 19:00</div>
+                    </div>
+                    <div class="header__info-mobile header__info-callback-mobile">
+                        <div class="header__info-title">+7 977 123 48 72</div>
+                        <button class="header__info-btn btn">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="product">
+                            <div class="product__left">
+                                <div class="product__img-wrap">
+                                    <img src="img/product-img.png" data-large="img/product-img.png" class="product__img">
+                                    <img src="img/product-zoom.png" class="product__zoom-img">
+                                </div>
+                                <div class="product__central">
+                                    <h1 class="product__title h1">Калибр 22 LR (5.65)</h1>
+                                    <a href="" class="product__link-reviews">Отзывы (0)</a>
+                                    <ul class="product__props">
+                                        <li class="product__prop">Внешний диаметр: 20 мм</li>
+                                        <li class="product__prop">Внешний диаметр: 20 мм</li>
+                                        <li class="product__prop">Внешний диаметр: 20 мм</li>
+                                        <li class="product__prop">Внешний диаметр: 20 мм</li>
+                                    </ul>
+                                    <div class="product__warning">
+                                        <span class="product__warning-word">внимание!</span> Обязательно заказывайте на 1 см больше, чем Вам необходимо, в процессе обработки и распила он может стачиваться.
+                                    </div>
+                                </div>
+                                <div class="product__detail">
+                                    <div class="product__tabs">
+                                        <button class="product__tab product__tab_active btn">Описание</button>
+                                        <button class="product__tab btn">Отзывы и вопросы</button>
+                                        <button class="product__tab btn">Наличие в магазине</button>
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content-elem product__content-elem_active">
+                                            <p class="product__content-p">Патронник, пропилы и шпильки отсутсвуют.</p>
+                                            <ul class="product__content-ul">
+                                                <li class="product__content-li">Внешний диаметр 20мм</li>
+                                                <li class="product__content-li">Количество нарезов: 6</li>
+                                                <li class="product__content-li">Твист: 250</li>
+                                            </ul>
+                                            <p class="product__content-p">Стоимость рассчитывается исходя из необходимой длины.</p>
+                                            <ul class="product__content-ul">
+                                                <li class="product__content-li">От 0 до 12 см - 5000</li>
+                                                <li class="product__content-li">От 12 до 29 см - 5000 + 300р за каждый следующий после 12 см</li>
+                                                <li class="product__content-li">От 30 до 80 см - 300р за каждый см начиная с первого</li>
+                                            </ul>
+                                            <p class="product__content-p">Напишите нашим специалистам или в корзине напишите необходимое количество см и мы рассчитаем Вам стоимость. Необходимое количество сантиметров указывайте в комметарии, Вам будет произведёт перасчёт.</p>
+                                        </div>
+                                        <div class="product__content-elem">
+                                            <a href="" class="add-review-btn btn">
+                                                <div class="add-review-btn__plus">+</div>
+                                                Добавить отзыв или задать вопрос
+                                            </a>
+                                            <div class="product__reviews">
+                                                <div class="product__review">
+                                                    <div class="product__review-img-wrap">
+                                                        <img src="img/review-avatar.png" class="product__review-img">
+                                                    </div>
+                                                    <div class="product__review-content">
+                                                        <h3 class="product__review-name">Гавриил Тарасов</h3>
+                                                        <div class="product__review-text">После заказа привезли через пару часов был приятно удивлён быстрой доставкой до дома. Оплата картой. Менеджер и доставщик очень вежливые.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product__review">
+                                                    <div class="product__review-img-wrap">
+                                                        <img src="img/review-avatar.png" class="product__review-img">
+                                                    </div>
+                                                    <div class="product__review-content">
+                                                        <h3 class="product__review-name">Гавриил Тарасов</h3>
+                                                        <div class="product__review-text">После заказа привезли через пару часов был приятно удивлён быстрой доставкой до дома. Оплата картой. Менеджер и доставщик очень вежливые.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product__review">
+                                                    <div class="product__review-img-wrap">
+                                                        <img src="img/review-avatar.png" class="product__review-img">
+                                                    </div>
+                                                    <div class="product__review-content">
+                                                        <h3 class="product__review-name">Гавриил Тарасов</h3>
+                                                        <div class="product__review-text">После заказа привезли через пару часов был приятно удивлён быстрой доставкой до дома. Оплата картой. Менеджер и доставщик очень вежливые.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product__review">
+                                                    <div class="product__review-img-wrap">
+                                                        <img src="img/review-avatar.png" class="product__review-img">
+                                                    </div>
+                                                    <div class="product__review-content">
+                                                        <h3 class="product__review-name">Гавриил Тарасов</h3>
+                                                        <div class="product__review-text">После заказа привезли через пару часов был приятно удивлён быстрой доставкой до дома. Оплата картой. Менеджер и доставщик очень вежливые.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product__content-elem">
+                                            <div class="shop-address">
+                                                <div class="shop-address__label">
+                                                    <img src="img/label.png" class="shop-address__label-img">
+                                                </div>
+                                                <div class="shop-address__content">
+                                                    <div class="shop-address__name">123456, Москва, Можайское шоссе 137 А</div>
+                                                    <div class="shop-address__in-stock">В наличии 23 шт.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__right">
+                                <div class="product__control-block">
+                                    <div class="product__price-block">
+                                        <div class="product__price">5 600 ₽</div>
+                                        <div class="product__counter">
+                                            <button class="product__counter-btn btn">
+                                                <img src="img/minus.png">
+                                            </button>
+                                            <input value="14см" type="text" name="quantity" class="product__counter-input input">
+                                            <button class="product__counter-btn btn">
+                                                <img src="img/plus.png">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__in-stock">
+                                        <img src="img/good-check-mark.png" class="product__in-stock-img">
+                                        В наличии
+                                    </div>
+                                    <button class="product__buy-btn btn">В корзину</button>
+                                    <a href="" class="product__buy-one-touch">купить в 1 клик</a>
+                                    <div class="product__btns-block">
+                                        <button class="product__btns-block-btn btn">
+                                            <img src="img/product-compare.png" class="product__btns-block-btn-img">
+                                            Сравнить
+                                        </button>
+                                        <button class="product__btns-block-btn btn">
+                                            <img src="img/favorite.png" class="product__btns-block-btn-img">
+                                            Отложить
+                                        </button>
+                                    </div>
+                                    <div class="product__links">
+                                        <a href="" class="product__link">Нашли дешевле, чем у нас?</a>
+                                        <a href="" class="product__link">Рассчитать стоимость доставки</a>
+                                    </div>
+                                </div>
+                                <div class="product__share">
+                                    <div class="product__text">Поделиться:</div>
+                                    <div class="product__share-links">
+                                        <a href="" class="product__share-link">
+                                            <img src="img/vk.png" class="product__share-link-img">
+                                        </a>
+                                        <a href="" class="product__share-link">
+                                            <img src="img/tw.png" class="product__share-link-img">
+                                        </a>
+                                        <a href="" class="product__share-link">
+                                            <img src="img/fb.png" class="product__share-link-img">
+                                        </a>
+                                        <a href="" class="product__share-link">
+                                            <img src="img/fb.png" class="product__share-link-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="goods container">
+                <div class="goods__inner row justify-content-between no-gutters">
+                    <div class="col-12">
+                        <h2 class="h2 product__similar-title">Похожие товары</h2>
+                    </div>
+                    <div class="goods__item col">
+                        <div style="background-image: url(img/good-img.png);" class="goods__img">
+                            <div class="goods__img-btns">
+                                <button class="goods__img-btn btn">
+                                    <img src="img/good-check-mark.png">
+                                </button>
+                                <button class="goods__img-btn btn">
+                                    <img src="img/good-favorite.png">
+                                </button>
+                            </div>
+                            <div class="goods__img-overlay">
+                                <button class="goods__img-overlay-btn btn">Быстрый просмотр</button>
+                            </div>
+                        </div>
+                        <div class="goods__text">
+                            <h3 class="goods__title">Калибр 22 LR (5.65)</h3>
+                            <div class="goods__description">Заготовка ствола нарезная под калибр 5.65.</div>
+                            <div class="goods__price">
+                                <span class="goods__price-big">5 000 ₽</span>
+                                <span class="goods__price-small">за 1 см</span>
+                            </div>
+                            <form class="goods__form">
+                                <div class="goods__counter">
+                                    <button type="button" class="goods__counter-btn btn">
+                                        <img src="img/minus.png">
+                                    </button>
+                                    <input value="1" type="text" name="quantity" class="goods__counter-input input">
+                                    <button type="button" class="goods__counter-btn btn">
+                                        <img src="img/plus.png">
+                                    </button>
+                                </div>
+                                <button class="goods__btn btn">
+                                    В корзину
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="goods__item col">
+                        <div style="background-image: url(img/good-img.png);" class="goods__img">
+                            <div class="goods__img-btns">
+                                <button class="goods__img-btn btn">
+                                    <img src="img/good-check-mark.png">
+                                </button>
+                                <button class="goods__img-btn btn">
+                                    <img src="img/good-favorite.png">
+                                </button>
+                            </div>
+                            <div class="goods__img-overlay">
+                                <button class="goods__img-overlay-btn btn">Быстрый просмотр</button>
+                            </div>
+                        </div>
+                        <div class="goods__text">
+                            <h3 class="goods__title">Калибр 22 LR (5.65)</h3>
+                            <div class="goods__description">Заготовка ствола нарезная под калибр 5.65.</div>
+                            <div class="goods__price">
+                                <span class="goods__price-big">5 000 ₽</span>
+                                <span class="goods__price-small">за 1 см</span>
+                            </div>
+                            <form class="goods__form">
+                                <div class="goods__counter">
+                                    <button type="button" class="goods__counter-btn btn">
+                                        <img src="img/minus.png">
+                                    </button>
+                                    <input value="1" type="text" name="quantity" class="goods__counter-input input">
+                                    <button type="button" class="goods__counter-btn btn">
+                                        <img src="img/plus.png">
+                                    </button>
+                                </div>
+                                <button class="goods__btn btn">
+                                    В корзину
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="goods__item col">
+                        <div style="background-image: url(img/good-img.png);" class="goods__img">
+                            <div class="goods__img-btns">
+                                <button class="goods__img-btn btn">
+                                    <img src="img/good-check-mark.png">
+                                </button>
+                                <button class="goods__img-btn btn">
+                                    <img src="img/good-favorite.png">
+                                </button>
+                            </div>
+                            <div class="goods__img-overlay">
+                                <button class="goods__img-overlay-btn btn">Быстрый просмотр</button>
+                            </div>
+                        </div>
+                        <div class="goods__text">
+                            <h3 class="goods__title">Калибр 22 LR (5.65)</h3>
+                            <div class="goods__description">Заготовка ствола нарезная под калибр 5.65.</div>
+                            <div class="goods__price">
+                                <span class="goods__price-big">5 000 ₽</span>
+                                <span class="goods__price-small">за 1 см</span>
+                            </div>
+                            <form class="goods__form">
+                                <div class="goods__counter">
+                                    <button type="button" class="goods__counter-btn btn">
+                                        <img src="img/minus.png">
+                                    </button>
+                                    <input value="1" type="text" name="quantity" class="goods__counter-input input">
+                                    <button type="button" class="goods__counter-btn btn">
+                                        <img src="img/plus.png">
+                                    </button>
+                                </div>
+                                <button class="goods__btn btn">
+                                    В корзину
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="goods__item col">
+                        <div style="background-image: url(img/good-img.png);" class="goods__img">
+                            <div class="goods__img-btns">
+                                <button class="goods__img-btn btn">
+                                    <img src="img/good-check-mark.png">
+                                </button>
+                                <button class="goods__img-btn btn">
+                                    <img src="img/good-favorite.png">
+                                </button>
+                            </div>
+                            <div class="goods__img-overlay">
+                                <button class="goods__img-overlay-btn btn">Быстрый просмотр</button>
+                            </div>
+                        </div>
+                        <div class="goods__text">
+                            <h3 class="goods__title">Калибр 22 LR (5.65)</h3>
+                            <div class="goods__description">Заготовка ствола нарезная под калибр 5.65.</div>
+                            <div class="goods__price">
+                                <span class="goods__price-big">5 000 ₽</span>
+                                <span class="goods__price-small">за 1 см</span>
+                            </div>
+                            <form class="goods__form">
+                                <div class="goods__counter">
+                                    <button type="button" class="goods__counter-btn btn">
+                                        <img src="img/minus.png">
+                                    </button>
+                                    <input value="1" type="text" name="quantity" class="goods__counter-input input">
+                                    <button type="button" class="goods__counter-btn btn">
+                                        <img src="img/plus.png">
+                                    </button>
+                                </div>
+                                <button class="goods__btn btn">
+                                    В корзину
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        <div class="footer__top row">
+                            <div class="footer_logo-wrap col-12 col-lg-4 col-xl-3">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="col-12 col-lg-2 col-xl-auto">
+                                <div class="footer__menu">
+                                    <a href="" class="footer__menu-link">Обзоры</a>
+                                    <a href="" class="footer__menu-link">Гарантии</a>
+                                    <a href="" class="footer__menu-link">Карта сайта</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-xl-auto">
+                                <div class="footer__menu">
+                                    <a href="" class="footer__menu-link">Правовые вопросы</a>
+                                    <a href="" class="footer__menu-link">Политика конфиденциальности</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-xl-auto">
+                                <div class="footer__menu">
+                                    <a href="" class="footer__menu-link">О компании</a>
+                                    <a href="" class="footer__menu-link">Контакты</a>
+                                    <a href="" class="footer__menu-link">Доставка</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-12 col-xl-3">
+                                <div class="footer__social">
+                                    <a href="" class="footer__social-link">
+                                        <img src="img/fb.png">
+                                    </a>
+                                    <a href="" class="footer__social-link">
+                                        <img src="img/tw.png">
+                                    </a>
+                                    <a href="" class="footer__social-link">
+                                        <img src="img/vk.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom-wrap row">
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer__bottom col">
+                                © Интернет-магазин "Оружейные технологии", 2019
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
