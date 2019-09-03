@@ -237,6 +237,7 @@ body {font-family: 'Open Sans', sans-serif; -webkit-transition: .1s; -o-transiti
 
     .special-offer__text {font-size: 20px;}
     .special-offer__form {width: 440px;}
+    .special-offer__img {margin-right: 50px;}
 
     .goods__inner {-webkit-box-pack: justify!important;-ms-flex-pack: justify!important;justify-content: space-between!important;}
 }
