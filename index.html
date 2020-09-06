@@ -34,15 +34,15 @@
 					VJC.applyGravity = scn.activeCamera.applyGravity;
 					scn.activeCamera = VJC;*/
 
-					scn.activeCamera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, new BABYLON.Vector3(0, 0, 0), scn);
+					/*scn.activeCamera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, new BABYLON.Vector3(0, 0, 0), scn);
 					scn.activeCamera.setPosition(new BABYLON.Vector3(0, 0, 10));
-					scn.activeCamera.attachControl(cnv, true);
+					scn.activeCamera.attachControl(cnv, true);*/
 
-					for(var mesh of scn.meshes) {
+					/*for(var mesh of scn.meshes) {
 						console.log(mesh);
-					}
+					}*/
 
-					/*
+
 					// Parameters: name, position, scene
 					scn.activeCamera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 10, -10), scene);
 
@@ -63,8 +63,7 @@
 
 					scn.activeCamera.attachControl(cnv, true);
 
-					camera.lockedTarget = box;
-					*/
+					camera.lockedTarget = scn.meshes[0];
 
 					eng.runRenderLoop(() => {
 						scn.render();
