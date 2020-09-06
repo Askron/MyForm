@@ -28,13 +28,19 @@
 				let cnv = document.querySelector(`.mdl`);
 				let eng = new BABYLON.Engine(cnv, true);
 				BABYLON.SceneLoader.Load("", "mdls/4.babylon", eng, function (scn) {
-					var VJC = new BABYLON.VirtualJoysticksCamera("VJC", scn.activeCamera.position, scn);
+					/*var VJC = new BABYLON.VirtualJoysticksCamera("VJC", scn.activeCamera.position, scn);
 					VJC.rotation = scn.activeCamera.rotation;
 					VJC.checkCollisions = scn.activeCamera.checkCollisions;
 					VJC.applyGravity = scn.activeCamera.applyGravity;
-					scn.activeCamera = VJC;
+					scn.activeCamera = VJC;*/
 
-					scn.activeCamera.attachControl(cnv);
+					// Parameters: alpha, beta, radius, target position, scene
+					scn.activeCamera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, new BABYLON.Vector3(0, 0, 0), scn);
+
+					// Positions the camera overwriting alpha, beta, radius
+					scn.activeCamera.setPosition(new BABYLON.Vector3(0, 0, 10));
+
+					scn.activeCamera.attachControl(cnv, true);
 					eng.runRenderLoop(() => {
 						scn.render();
 					});
