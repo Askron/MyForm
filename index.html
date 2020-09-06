@@ -38,7 +38,7 @@
 					scn.activeCamera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, new BABYLON.Vector3(0, 0, 0), scn);
 
 					// Positions the camera overwriting alpha, beta, radius
-					scn.activeCamera.setPosition(new BABYLON.Vector3(0, 0, 10));
+					scn.activeCamera.setPosition(new BABYLON.Vector3(0, 0, 0));
 
 					scn.activeCamera.attachControl(cnv, true);
 					eng.runRenderLoop(() => {
