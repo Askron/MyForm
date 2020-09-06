@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Try</title>
+		<script src="https://cdn.babylonjs.com/babylon.js"></script>
+		<style>
+			html, body {
+				block-size: 100%;
+				inline-size: 100%;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+			canvas {
+				block-size: 100%;
+				inline-size: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas class='mdl'></canvas>
+		<script>
+			window.addEventListener(`load`, () => {
+				if (!BABYLON.Engine.isSupported()) {
+					console.error(`babylon is not supported`);
+					return;
+				}
+				let cnv = document.querySelector(`.mdl`);
+				let eng = new BABYLON.Engine(cnv, true);
+				BABYLON.SceneLoader.Load("", "mdls/4.babylon", eng, function (scn) {
+					scn.activeCamera.attachControl(cnv);
+					eng.runRenderLoop(() => {
+						scn.render();
+					});
+				}, function (progress) {
+				console.log(progress);
+				// To do: give progress feedback to user
+				});
+			});
+		</script>
+	</body>
+</html>
