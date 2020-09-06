@@ -46,6 +46,8 @@
 					//scn.activeCamera.setPosition(new BABYLON.Vector3(0, 0, 10));
 					scn.activeCamera.setTarget(scn.meshes[0]);
 					scn.activeCamera.attachControl(cnv, true);
+					scn.activeCamera.cameraAcceleration = 0.001;
+					scn.activeCamera.maxCameraSpeed = 1;
 
 					/*scn.activeCamera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 0, 0), scn);
 					scn.activeCamera.radius = 10;
