@@ -44,7 +44,7 @@
 
 
 					// Parameters: name, position, scene
-					scn.activeCamera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 10, -10), scene);
+					scn.activeCamera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 10, -10), scn);
 
 					// The goal distance of camera from target
 					scn.activeCamera.radius = 30;
@@ -63,7 +63,7 @@
 
 					scn.activeCamera.attachControl(cnv, true);
 
-					camera.lockedTarget = scn.meshes[0];
+					scn.activeCamera.lockedTarget = scn.meshes[0];
 
 					eng.runRenderLoop(() => {
 						scn.render();
