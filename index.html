@@ -34,13 +34,38 @@
 					VJC.applyGravity = scn.activeCamera.applyGravity;
 					scn.activeCamera = VJC;*/
 
-					// Parameters: alpha, beta, radius, target position, scene
 					scn.activeCamera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, new BABYLON.Vector3(0, 0, 0), scn);
-
-					// Positions the camera overwriting alpha, beta, radius
 					scn.activeCamera.setPosition(new BABYLON.Vector3(0, 0, 10));
+					scn.activeCamera.attachControl(cnv, true);
+
+					for(var mesh of scn.meshes) {
+						console.log(mesh);
+					}
+
+					/*
+					// Parameters: name, position, scene
+					scn.activeCamera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 10, -10), scene);
+
+					// The goal distance of camera from target
+					scn.activeCamera.radius = 30;
+
+					// The goal height of camera above local origin (centre) of target
+					scn.activeCamera.heightOffset = 10;
+
+					// The goal rotation of camera around local origin (centre) of target in x y plane
+					scn.activeCamera.rotationOffset = 0;
+
+					// Acceleration of camera in moving from current to goal position
+					scn.activeCamera.cameraAcceleration = 0.005
+
+					// The speed at which acceleration is halted
+					scn.activeCamera.maxCameraSpeed = 10
 
 					scn.activeCamera.attachControl(cnv, true);
+
+					camera.lockedTarget = box;
+					*/
+
 					eng.runRenderLoop(() => {
 						scn.render();
 					});
@@ -51,4 +76,4 @@
 			});
 		</script>
 	</body>
-</html>
+</html>VRayCam001.Target
