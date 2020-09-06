@@ -42,28 +42,18 @@
 						console.log(mesh);
 					}*/
 
-
-					// Parameters: name, position, scene
-					scn.activeCamera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 0, 0), scn);
-
-					// The goal distance of camera from target
-					scn.activeCamera.radius = 10;
-
-					// The goal height of camera above local origin (centre) of target
-					scn.activeCamera.heightOffset = 0;
-
-					// The goal rotation of camera around local origin (centre) of target in x y plane
-					scn.activeCamera.rotationOffset = 0;
-
-					// Acceleration of camera in moving from current to goal position
-					scn.activeCamera.cameraAcceleration = 0.005
-
-					// The speed at which acceleration is halted
-					scn.activeCamera.maxCameraSpeed = 1
-
+					scn.activeCamera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, new BABYLON.Vector3(0, 0, 0), scn);
+					scn.activeCamera.setPosition(new BABYLON.Vector3(0, 0, -10));
 					scn.activeCamera.attachControl(cnv, true);
 
-					scn.activeCamera.lockedTarget = scn.meshes[0];
+					/*scn.activeCamera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 0, 0), scn);
+					scn.activeCamera.radius = 10;
+					scn.activeCamera.heightOffset = 0;
+					scn.activeCamera.rotationOffset = 0;
+					scn.activeCamera.cameraAcceleration = 0.001
+					scn.activeCamera.maxCameraSpeed = 1
+					scn.activeCamera.attachControl(cnv, true);
+					scn.activeCamera.lockedTarget = scn.meshes[0];*/
 
 					eng.runRenderLoop(() => {
 						scn.render();
